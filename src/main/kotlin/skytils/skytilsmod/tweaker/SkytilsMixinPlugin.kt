@@ -30,7 +30,7 @@ class SkytilsMixinPlugin : IMixinConfigPlugin {
     override fun onLoad(mixinPackage: String) {
         deobfEnvironment = Launch.blackboard.getOrDefault("fml.deobfuscatedEnvironment", false) as Boolean
         if (deobfEnvironment) {
-            println("We are in a deobfuscated environment, loading compatability mixins.")
+            println("We are in a deobfuscated environment, loading compatibility mixins.")
         }
     }
 
